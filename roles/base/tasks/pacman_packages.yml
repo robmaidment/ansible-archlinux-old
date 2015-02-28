@@ -1,0 +1,4 @@
+---
+- name: install base package
+  pacman: name={{ item }}
+  with_items: packages

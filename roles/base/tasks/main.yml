@@ -1,0 +1,9 @@
+---
+- include: install_packages.yml
+- include: install_yaourt.yml
+- name: deploy git config files
+  sudo: no
+  git:
+    accept_hostkey: yes
+    repo: 'git://github.com/tyjak/archlinux.git'
+    dest: /vagrant

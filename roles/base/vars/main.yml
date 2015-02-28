@@ -1,0 +1,16 @@
+---
+packages :
+  - git
+  - i3-wm
+  - dunst
+  - feh
+  - slim
+  - vim
+  - xorg-server
+  - xorg-xinit
+yaourt_packages:
+  - dmenu-xft-height
+  - htop-solarized-vi
+  - otf-inconsolata-powerline-git
+  - otf-powerline-symbols-git
+  - i3pystatus
