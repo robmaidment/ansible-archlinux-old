@@ -8,6 +8,7 @@ packages :
   - vim
   - xorg-server
   - xorg-xinit
+  - rsync
 yaourt_packages:
   - dmenu-xft-height
   - htop-solarized-vi

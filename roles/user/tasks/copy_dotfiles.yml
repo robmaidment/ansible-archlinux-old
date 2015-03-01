@@ -1,0 +1,11 @@
+---
+- name: "copy user files"
+  synchronize:
+    src: "../files/"
+    dest: "/home/{{user_name}}/"
+    rsync_opts: "-z"
+- name: "ensure ownership"
+  file:
+    path: "/home/{{user_name}}"
+    owner: "{{user_name}}"
+    group: "{{user_name}}"
