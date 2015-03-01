@@ -1,0 +1,4 @@
+---
+- name: "update pacman cache"
+  pacman: update_cache=yes
+  when: infinality_configured|failed or yaourt_check|failed 

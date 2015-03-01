@@ -9,9 +9,23 @@ packages :
   - xorg-server
   - xorg-xinit
   - rsync
+  - cairo
+  - freetype2
+  - fontconfig
+  - ibfonts-meta-base
+  - ttf-courier-prime-ib
+  - ttf-dejavu-ib
+  - ttf-heuristica-ib
+  - ttf-liberation-ib
+  - ttf-symbola-ib
 yaourt_packages:
+  - rxvt-unicode
+  - rxvt-unicode-terminfo
   - dmenu-xft-height
   - htop-solarized-vi
   - otf-inconsolata-powerline-git
   - otf-powerline-symbols-git
   - i3pystatus
+  - python-pywapi
+  - weather
+  - ttf-weather

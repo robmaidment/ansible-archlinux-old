@@ -1,21 +1,6 @@
 ---
-# yaourt install and yaourt packages install
-- name: test if yaourt installed
-  command: /usr/bin/pacman -Qs yaourt
-  register: yaourt_check
-  ignore_errors: true
-- name: Add repository to install yaourt if not present
-  lineinfile:
-    dest: /etc/pacman.conf
-    state: present
-    line: "{{ item.line }}"
-  with_items:
-    - line: '[archlinuxfr]'
-    - line: 'SigLevel = Never'
-    - line: 'Server = http://repo.archlinux.fr/$arch'
-  when: yaourt_check|failed
 - name: install yaourt if not present
-  pacman: name=yaourt state=present update_cache=yes
+  pacman: name=yaourt state=present
   when: yaourt_check|failed
 - name: get new packages to install
   command: pacman -Q {{ item }}

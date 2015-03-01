@@ -1,4 +1,4 @@
-Archliunx installation for my daily use
+Archlinux installation for my daily use
 =======================================
 
 Ansible files for installation of Archliunx with my dev env installed.

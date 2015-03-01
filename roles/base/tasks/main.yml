@@ -1,3 +1,6 @@
 ---
+- include: configure_pacman.yml
+- include: configure_yaourt.yml
+- include: update_pacman_cache.yml
 - include: install_packages.yml
 - include: install_yaourt.yml

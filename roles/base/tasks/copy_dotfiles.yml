@@ -1,0 +1,17 @@
+---
+- name: "copy user files"
+  synchronize:
+    src: ../files/
+    dest: /home/{{user_name}}/
+    rsync_opts: -z
+# these failed
+#- name: "ensure ownership"
+#  sudo: yes
+#  file:
+#    path: /home/{{user_name}}
+#    state: directory
+#    recurse: yes
+#    owner: {{user_name}}
+#    group: {{user_name}}
+- name: "ensure ownership"
+  shell: sudo chown -R {{user_name}}:{{user_name}} /home/{{user_name}}
