@@ -1,4 +1,5 @@
 ---
+- include: configure_locale.yml
 - include: configure_pacman.yml
 - include: configure_yaourt.yml
 - include: update_pacman_cache.yml

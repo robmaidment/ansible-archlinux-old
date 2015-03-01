@@ -8,6 +8,7 @@ packages :
   - vim
   - xorg-server
   - xorg-xinit
+  - xorg-xrdb
   - rsync
   - cairo
   - freetype2
@@ -18,6 +19,9 @@ packages :
   - ttf-heuristica-ib
   - ttf-liberation-ib
   - ttf-symbola-ib
+  - ttf-inconsolata
+  - gtk2
+  - gtk3
 yaourt_packages:
   - rxvt-unicode
   - rxvt-unicode-terminfo
@@ -27,5 +31,10 @@ yaourt_packages:
   - otf-powerline-symbols-git
   - i3pystatus
   - python-pywapi
+  - python-netifaces
   - weather
   - ttf-weather
+  - ttf-powerline-fonts-git
+  - numix-themes
+  - gtk-theme-numix-solarized
+  - vimb
