@@ -23,7 +23,7 @@ To test checkout these repo and execute `vagrant up` && `ansible -i inventory ar
 Screenshot
 ----------
 
-!https://github.com/tyjak/ansible-archlinux/blob/master/archeevbox.png!
+![capture](https://github.com/tyjak/ansible-archlinux/blob/master/archeevbox.png)!
 
 
 [1]: http://tyjak.github.io/Archlinux.html
