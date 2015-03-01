@@ -15,7 +15,15 @@ For testing use the vagrant file to mount a test machine on virtualbox `vagrant 
 
 Ansible setup
 -------------
-TODO
+
+These is a work in progress. You can test my archlinux env with vagrant user.
+To test checkout these repo and execute `vagrant up` && `ansible -i inventory archlinux.yml`
+
+
+Screenshot
+----------
+
+!https://github.com/tyjak/ansible-archlinux/blob/master/archeevbox.png!
 
 
 [1]: http://tyjak.github.io/Archlinux.html
