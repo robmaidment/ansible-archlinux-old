@@ -1,0 +1,23 @@
+---
+- name: "configure azerty keyboard"
+  lineinfile:
+    dest: /etc/vconsole.conf
+    state: present
+    regexp: 'us$'
+    line: 'KEYMAP=fr-pc'
+- name: "configure fr locale"
+  lineinfile:
+    dest: /etc/locale.gen
+    state: present
+    regexp: '^#(fr_FR.UTF-8.*)$'
+    line: 'fr_FR.UTF-8 UTF-8'
+- name: "locale gen"
+  command: locale-gen
+- name: "copy locale.conf"
+  copy:
+    src: ../files/locale.conf
+    dest: /etc/locale.conf
+    owner: root
+    group: root
+    mode: 644
+

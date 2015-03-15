@@ -27,14 +27,15 @@ yaourt_packages:
   - rxvt-unicode-terminfo
   - dmenu-xft-height
   - htop-solarized-vi
-  - otf-inconsolata-powerline-git
+  - otf-inconsolata-dz-powerline-git
   - otf-powerline-symbols-git
   - i3pystatus
   - python-pywapi
   - python-netifaces
   - weather
   - ttf-weather
-  - ttf-powerline-fonts-git
+    #- powerline-fonts-git
+  - ttf-font-awesome
   - numix-themes
   - gtk-theme-numix-solarized
   - vimb

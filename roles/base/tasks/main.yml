@@ -5,3 +5,5 @@
 - include: update_pacman_cache.yml
 - include: install_packages.yml
 - include: install_yaourt.yml
+- include: configure_slim.yml
+- include: configure_service.yml

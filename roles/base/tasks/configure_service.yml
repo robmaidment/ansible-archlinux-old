@@ -1,0 +1,5 @@
+---
+- name: "install service slim"
+  shell: sudo systemctl enable slim
+#- name: "install service dunst"
+#  shell: sudo systemctl enable dunst

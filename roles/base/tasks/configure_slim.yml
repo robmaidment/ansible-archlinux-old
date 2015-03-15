@@ -1,0 +1,13 @@
+---
+- name: "configure slim"
+  synchronize:
+    src: ../files/slim-theme-archlinux-solarized
+    dest: /usr/share/slim/themes/
+- name: "change slim.conf"
+  lineinfile:
+    dest: /etc/slim.conf
+    state: present
+    regexp: '^current_theme'
+    line: 'current_theme slim-theme-archlinux-solarized'
+
+
