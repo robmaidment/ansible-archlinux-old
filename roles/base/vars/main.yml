@@ -36,6 +36,7 @@ yaourt_packages:
   - ttf-weather
     #- powerline-fonts-git
   - ttf-font-awesome
+  - ttf-meslo-powerline-git
   - numix-themes
   - gtk-theme-numix-solarized
-  - vimb
+  - vimb-git
