@@ -1,5 +1,5 @@
-[submodule "roles/user/files"]
-	path = roles/user/files
+[submodule "roles/user/files/archlinux"]
+	path = roles/user/files/archlinux
 	url = https://github.com/tyjak/archlinux
 [submodule "roles/base/files/slim-theme-archlinux-solarized"]
 	path = roles/base/files/slim-theme-archlinux-solarized

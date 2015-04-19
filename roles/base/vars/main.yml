@@ -9,6 +9,8 @@ packages :
   - xorg-server
   - xorg-xinit
   - xorg-xrdb
+  - xclip
+  - xsel
   - rsync
   - cairo
   - freetype2

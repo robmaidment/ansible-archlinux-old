@@ -1,0 +1,10 @@
+---
+- name: "checkout git vim conf"
+  git:
+   repo: https://github.com/tyjak/vim-config.git
+   dest: /home/{{user_name}}/vim-config
+   version: master
+  tags: vim
+- name: "create alias to git vim"
+  shell: ln -s /home/{{user_name}}/gitvim/.vim /home/{{user_name}}/.vim && ln -s /home/{{user_name}}/gitvim/.vimrc /home/{{user_name}}/.vimrc 
+  tags: vim

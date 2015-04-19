@@ -1,15 +1,27 @@
 ---
 - name: "copy user files"
+  sudo: no
   synchronize:
-    src: ../files/
+    src: ../files/archlinux/
     dest: /home/{{user_name}}/
+    archive: no
+    recursive: yes
     owner: no
     group: no
-- name: "ensure ownership"
-  sudo: yes
-  file:
-    state: directory
-    recurse: yes
-    path: "/home/{{user_name}}"
-    owner: "{{user_name}}"
-    group: "{{user_name}}"
+  tags: "dotfiles"
+- name: "remove .git files"
+  command: rm /home/{{user_name}}/.git
+  tags: "dotfiles"
+- name: "copy vim files"
+  sudo: no
+  synchronize:
+    src: ../files/vim-config/
+    dest: /home/{{user_name}}/
+    archive: no
+    recursive: yes
+    owner: no
+    group: no
+  tags: "dotfiles"
+- name: "remove .git files"
+  command: rm /home/{{user_name}}/.git
+  tags: "dotfiles"

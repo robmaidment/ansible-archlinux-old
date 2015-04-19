@@ -1,2 +1,3 @@
 ---
 - include: copy_dotfiles.yml
+- include: vim_conf.yml
