@@ -12,6 +12,7 @@
     dest: /home/{{user_name}}/src/vim-config
   tags: "dotfiles"
 - name: "link dot files"
+  sudo: no
   file:
     state: link
     src: /home/{{user_name}}/src/{{ item.src }}
