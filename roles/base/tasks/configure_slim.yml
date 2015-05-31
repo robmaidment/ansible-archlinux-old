@@ -2,7 +2,7 @@
 - name: "configure slim"
   git:
     repo: https://github.com/tyjak/slim-theme-archlinux-solarized
-    dest: /usr/share/slim/themes/
+    dest: /usr/share/slim/themes/slim-theme-archlinux-solarized
 - name: "change slim.conf"
   lineinfile:
     dest: /etc/slim.conf
