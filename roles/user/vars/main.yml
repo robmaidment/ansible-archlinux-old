@@ -1,17 +1,17 @@
 ---
 link_items:
-  - src:archlinux/.config
-    dest:.config
-  - src:archlinux/.Xresources
-    dest:.Xresources
-  - src :archlinux/.xinitrc
-    dest:.xinitrc
-  - src :archlinux/.bashrc
-    dest:.bashrc
-  - src :archlinux/.fehbg
-    dest:.fehbg
-  - src :vim-config/.vim
-    dest:.vim
-  - src :vim-config/.vimrc
-    dest:.vimrc
+  - src: archlinux/.config
+    dest: .config
+  - src: archlinux/.Xresources
+    dest: .Xresources
+  - src: archlinux/.xinitrc
+    dest: .xinitrc
+  - src: archlinux/.bashrc
+    dest: .bashrc
+  - src: archlinux/.fehbg
+    dest: .fehbg
+  - src: vim-config/.vim
+    dest: .vim
+  - src: vim-config/.vimrc
+    dest: .vimrc
 
