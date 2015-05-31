@@ -8,8 +8,6 @@ link_items:
     dest: .Xresources
   - src: archlinux/.xinitrc
     dest: .xinitrc
-  - src: archlinux/.bashrc
-    dest: .bashrc
   - src: archlinux/.fehbg
     dest: .fehbg
   - src: vim-config/.vim
