@@ -16,5 +16,5 @@
     state: link
     src: /home/{{user_name}}/src/{{ item.src }}
     dest: ~/{{ item.dest }}
-    with_items: link_items
+  with_items: link_items
   tags: "dotfiles"

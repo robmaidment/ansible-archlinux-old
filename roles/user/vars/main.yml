@@ -10,8 +10,8 @@ link_items:
     dest:.bashrc
   - src :archlinux/.fehbg
     dest:.fehbg
-  - src :vim-files/.vim
+  - src :vim-config/.vim
     dest:.vim
-  - src :vim-files/.vimrc
+  - src :vim-config/.vimrc
     dest:.vimrc
 
