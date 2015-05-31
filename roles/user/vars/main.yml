@@ -2,6 +2,8 @@
 link_items:
   - src: archlinux/.config
     dest: .config
+  - src: archlinux/.Xmodmap
+    dest: .Xmodmap
   - src: archlinux/.Xresources
     dest: .Xresources
   - src: archlinux/.xinitrc
