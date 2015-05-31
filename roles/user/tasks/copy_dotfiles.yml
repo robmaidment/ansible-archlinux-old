@@ -1,19 +1,20 @@
 ---
-- name: "copy user files"
+- name: "checkout dot files"
   sudo: no
   git:
     repo: http://github.com/tyjak/archlinux
-    dest: /home/{{user_name}}/src/
+    dest: /home/{{user_name}}/src/archlinux
   tags: "dotfiles"
-- name: "link dot files"
-  command: ln -s /home/{{user_name}}/src/archlinux/.config .config
-  tags: "dotfiles"
-- name: "copy vim files"
+- name: "checkout vim files"
   sudo: no
   git:
     repo: http://github.com/tyjak/vim-config
     dest: /home/{{user_name}}/src/vim-config
   tags: "dotfiles"
-- name: "link vim config"
-  command: ln -s /home/{{user_name}}/src/vim-config/.vim .vim
+- name: "link dot files"
+  file:
+    state: link
+    src:/home/{{user_name}}/src/{{ item.src }}
+    dest:~/{{ item.dest }}
+    with_items: linkdotfiles
   tags: "dotfiles"
