@@ -1,27 +1,19 @@
 ---
 - name: "copy user files"
   sudo: no
-  synchronize:
-    src: ../files/archlinux/
-    dest: /home/{{user_name}}/
-    archive: no
-    recursive: yes
-    owner: no
-    group: no
+  git:
+    repo: http://github.com/tyjak/archlinux
+    dest: /home/{{user_name}}/src/
   tags: "dotfiles"
-- name: "remove .git files"
-  command: rm /home/{{user_name}}/.git
+- name: "link dot files"
+  command: ln -s /home/{{user_name}}/src/archlinux/.config .config
   tags: "dotfiles"
 - name: "copy vim files"
   sudo: no
-  synchronize:
-    src: ../files/vim-config/
-    dest: /home/{{user_name}}/
-    archive: no
-    recursive: yes
-    owner: no
-    group: no
+  git:
+    repo: http://github.com/tyjak/vim-config
+    dest: /home/{{user_name}}/src/vim-config
   tags: "dotfiles"
-- name: "remove .git files"
-  command: rm /home/{{user_name}}/.git
+- name: "link vim config"
+  command: ln -s /home/{{user_name}}/src/vim-config/.vim .vim
   tags: "dotfiles"
