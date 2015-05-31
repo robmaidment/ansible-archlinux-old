@@ -1,7 +1,7 @@
 ---
 - name: "configure slim"
-  synchronize:
-    src: ../files/slim-theme-archlinux-solarized
+  git:
+    repo: https://github.com/tyjak/slim-theme-archlinux-solarized
     dest: /usr/share/slim/themes/
 - name: "change slim.conf"
   lineinfile:
