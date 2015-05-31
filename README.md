@@ -19,6 +19,14 @@ Ansible setup
 These is a work in progress. You can test my archlinux env with vagrant user.
 To test checkout these repo and execute `vagrant up` && `ansible -i inventory archlinux.yml`
 
+Instruction on Windows
+----------------------
+
+You have to use Boot2Docker + vagrant.
+First download the [Vagrantfile][4] and `vagrant up` the archlinux base vm.
+Then ssh into boot2docker, clone the repo, link the Dockerfile out of the repo.
+`cd ansible-archlinux && docker build .`
+
 
 Screenshot
 ----------
