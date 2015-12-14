@@ -31,7 +31,7 @@ Then ssh into boot2docker, clone the repo, link the Dockerfile out of the repo.
 Screenshot
 ----------
 
-![capture](https://github.com/tyjak/ansible-archlinux/blob/master/archeevbox.png)
+![capture](https://github.com/tyjak/ansible-archlinux-old/blob/master/archeevbox.png)
 
 
 [1]: http://tyjak.github.io/Archlinux.html
