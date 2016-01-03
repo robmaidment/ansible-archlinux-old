@@ -37,4 +37,4 @@ Screenshot
 [1]: http://tyjak.github.io/Archlinux.html
 [2]: https://github.com/elasticdog/packer-arch
 [3]: https://mirrors.kernel.org/archlinux/iso/
-[4]: https://github.com/tyjak/ansible-archlinux/raw/master/Vagrantfile
+[4]: https://github.com/tyjak/ansible-archlinux-old/raw/master/Vagrantfile
